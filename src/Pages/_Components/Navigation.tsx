@@ -30,7 +30,7 @@ const menuItems = [
 
 function Navigation() {
   return (
-    <div className="navigation_section px-20 py-3 flex items-center ">
+    <div className="navigation_section px-20 py-3 flex items-center mb-0">
       <h2 className="text-3xl font-semibold ">SHOP.CO</h2>
       <NavigationMenu className="ml-10">
         <NavigationMenuList>
