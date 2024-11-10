@@ -33,7 +33,7 @@ function HomeSection() {
 
                 <div className='stats flex gap-10'>
                     {stats.map((stat,index) => (
-                        <div className='stat pr-4' style={{borderRight: index !== 2 ? "2px solid #D9D9D9" : "none" }}>
+                        <div key={index} className='stat pr-4' style={{borderRight: index !== 2 ? "2px solid #D9D9D9" : "none" }}>
                             <h3 className='stat_title font-bold text-4xl' >{stat.title}</h3>
                             <p className='stat_description text-slate-600'>{stat.desc}</p>
                         </div>

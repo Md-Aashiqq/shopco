@@ -37,8 +37,8 @@ function Navigation() {
           <NavigationMenuItem>
             <NavigationMenuTrigger>Shops</NavigationMenuTrigger>
           </NavigationMenuItem>
-          {menuItems.map((item) => (
-            <NavigationMenuItem>
+          {menuItems.map((item,index) => (
+            <NavigationMenuItem key={index}>
               <a href={item.path}>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   {item.name}
