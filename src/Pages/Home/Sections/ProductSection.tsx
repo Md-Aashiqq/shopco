@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import Product from "@/Pages/_Components/Product";
 import { ProductProps } from "@/utils/data";
 import axios from "axios";
-import React, { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 interface ProductSectionProps {
   title: string;

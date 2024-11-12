@@ -6,7 +6,7 @@ import { ProductProps } from '@/utils/data'
 
 
 
-function fullStar(count: number){
+export function fullStar(count: number){
     return Array.from({ length: count }, (_, index) => <Star key={index} className='text-amber-400 fill-amber-400 w-[14px] h-[14px]' />);
 }
 
