@@ -1,8 +1,7 @@
 import { Button } from '@/components/ui/button'
 import React from 'react'
 
-import homeImage from '../../../assets/home_image.png'
-
+import model from "../../../assets/model.jpg"
 
 const stats = [{
     title:"200+",
@@ -23,9 +22,9 @@ const stats = [{
 function HomeSection() {
   return (
     <>
-        <div className='main_section flex flex-basis bg-stone-200'>
+        <div className='main_section grid grid-cols-3 bg-stone-200'>
 
-            <div className='main_content basis-1/2 pl-[100px] pt-[100px]'>
+            <div className='main_content col-span-2 pl-[100px] pt-[100px]'>
                 <h1 className='main_title w-[577px] font-bold text-6xl mb-3'>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
                 <p className='main_description w-[577px] mb-3 text-slate-600'>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
                 
@@ -42,8 +41,8 @@ function HomeSection() {
                 </div>
             </div>
 
-            <div className='main_image basis-1/2'>
-                <img src={homeImage} alt='Home Image' className='h-[650px] w-full object-fit' />
+            <div className='main_image col-span-1'>
+                <img src={model} alt='Home Image' className='h-[650px] w-full object-fit' />
             </div>
         </div>
     </>
