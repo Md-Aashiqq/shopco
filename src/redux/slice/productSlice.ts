@@ -1,11 +1,13 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import {createSlice, createAsyncThunk} from "@reduxjs/toolkit";
 import axiosInstancefrom from "../axiosinstance";
 
 
-export const fetchProduct = createAsyncThunk("/products/4", async (_, {rejectWithValue}) => {
-    console.log("fetching")
+export const fetchProduct = createAsyncThunk("/products/", async (args : any, {rejectWithValue}) => {
+    const {intinalCount} = args
+    console.log(intinalCount)
     try{
-        const response = await axiosInstancefrom.get("/products/4");
+        const response = await axiosInstancefrom.get(`/products/${intinalCount}`);
         return response.data;
     }catch(error){
         return rejectWithValue(error)
